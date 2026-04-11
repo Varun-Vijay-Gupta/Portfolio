@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Varun Gupta — Computer Science student and web developer from Surat, India." />
+  <title>Varun Gupta | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-loader" id="pageLoader" aria-hidden="true">
+    <div class="page-loader__inner">
+      <span class="page-loader__dot"></span>
+      <span class="page-loader__dot"></span>
+      <span class="page-loader__dot"></span>
+    </div>
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Primary">
+      <a class="nav__brand" href="#top">VG</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navMenu" id="navToggle">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+      <ul class="nav__list" id="navMenu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#internship">Internship</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact" class="nav__cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__grid">
+        <div class="hero__content reveal">
+          <p class="hero__eyebrow">Hello, I’m Varun Gupta</p>
+          <h1 id="hero-title" class="hero__title">Aspiring Software Developer <span class="hero__divider">|</span> Full Stack Enthusiast</h1>
+          <p class="hero__tagline">
+            I enjoy turning complex problems into clear, reliable software—building scalable apps and learning something new with every project.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projects">View Projects</a>
+            <a class="btn btn--ghost" href="#contact">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero__aside reveal reveal--delay" aria-hidden="true">
+          <div class="hero__card">
+            <div class="hero__card-inner">
+              <span class="hero__stat-label">Location</span>
+              <span class="hero__stat-value">Surat, Gujarat</span>
+            </div>
+            <div class="hero__card-inner">
+              <span class="hero__stat-label">Focus</span>
+              <span class="hero__stat-value">Java &amp; Full Stack</span>
+            </div>
+            <div class="hero__accent"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__label">About</span>
+          <h2 id="about-title" class="section__title">Who I am</h2>
+        </header>
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p class="about__lead">
+              Computer Science Engineering student at <strong>P P Savani University</strong> with a strong foundation in Data Structures and Algorithms using Java. I’m skilled in object-oriented programming, backend development, and full-stack web development with JavaScript, Node.js, and MongoDB.
+            </p>
+            <p class="about__body">
+              I’m passionate about building scalable applications and solving real-world problems with thoughtful design and solid engineering.
+            </p>
+            <div class="about__edu">
+              <h3 class="about__edu-title">Education</h3>
+              <div class="about__edu-card">
+                <span class="about__edu-degree">BTech, Computer Science Engineering</span>
+                <span class="about__edu-school">P P Savani University</span>
+                <span class="about__edu-meta">CGPA: 8.5</span>
+              </div>
+            </div>
+          </div>
+          <div class="about__visual reveal reveal--delay">
+            <figure class="about__figure">
+              <!-- Save your headshot as images/varun-profile.png (same folder as this site) -->
+              <div class="about__photo-frame">
+                <img
+                  class="about__photo"
+                  src="images/varun.jpg"
+                  alt="Varun Gupta, Computer Science student and web developer"
+                  width="320"
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <figcaption class="about__caption">CSE Student &amp; Web Developer</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__label">Skills</span>
+          <h2 id="skills-title" class="section__title">What I work with</h2>
+        </header>
+        <div class="skills__grid">
+          <article class="skill-card reveal">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6h16M4 12h10M4 18h16"/></svg>
+            </div>
+            <h3 class="skill-card__title">Programming</h3>
+            <ul class="skill-card__list">
+              <li>Java</li><li>Python</li><li>JavaScript</li><li>PHP</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h6M7 12h10"/></svg>
+            </div>
+            <h3 class="skill-card__title">Web</h3>
+            <ul class="skill-card__list">
+              <li>HTML</li><li>CSS</li><li>Node.js</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6"/><path d="M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>
+            </div>
+            <h3 class="skill-card__title">Database</h3>
+            <ul class="skill-card__list">
+              <li>MongoDB</li><li>MySQL</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3 class="skill-card__title">Core</h3>
+            <ul class="skill-card__list">
+              <li>DSA</li><li>OOP</li><li>DBMS</li><li>OS</li><li>REST API</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2"/></svg>
+            </div>
+            <h3 class="skill-card__title">Tools</h3>
+            <ul class="skill-card__list">
+              <li>Git</li><li>Power BI</li><li>Figma</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__label">Projects</span>
+          <h2 id="projects-title" class="section__title">Selected work</h2>
+          <p class="section__lead">Larger builds highlighted first, with smaller experiments and utilities grouped below.</p>
+        </header>
+
+        <div class="projects-tier">
+          <div class="projects-tier__head reveal">
+            <span class="projects-tier__icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4.5 16.5c0-1.5 1.5-3 4.5-3s4.5 1.5 4.5 3M15 11l3 3 3-3M18 14v-6M9 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+            </span>
+            <h3 class="projects-tier__title">Major projects</h3>
+            <p class="projects-tier__desc">End-to-end applications with authentication, data layers, and structured engineering.</p>
+          </div>
+          <div class="projects-major">
+            <article class="project-major reveal">
+              <div class="project-major__visual project-major__visual--cs" role="img" aria-label="CodeSpark">
+                <span class="project-major__abbr" aria-hidden="true">CS</span>
+              </div>
+              <div class="project-major__body">
+                <span class="project-major__label">Featured</span>
+                <h4 class="project-major__title">CodeSpark</h4>
+                <p class="project-major__subtitle">Code learning platform</p>
+                <p class="project-major__text">Coding practice platform with an authentication system and REST API testing (Postman).</p>
+                <div class="project-major__stack">
+                  <span class="project-major__stack-head">
+                    <svg class="project-major__stack-ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
+                    Tech stack
+                  </span>
+                  <ul class="project-major__tags">
+                    <li>HTML</li><li>CSS</li><li>JavaScript</li><li>MongoDB</li>
+                  </ul>
+                </div>
+                <div class="project-major__actions">
+                  <a class="project-btn project-btn--primary" href="https://github.com/Varun-Vijay-Gupta/CodeSpark" target="_blank" rel="noopener noreferrer">
+                    <svg class="project-btn__gh" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    View Code
+                  </a>
+                  <a class="project-btn project-btn--secondary" href="https://code-spark-sandy.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-major reveal">
+              <div class="project-major__visual project-major__visual--ee" role="img" aria-label="ExamEase">
+                <span class="project-major__abbr" aria-hidden="true">EE</span>
+              </div>
+              <div class="project-major__body">
+                <span class="project-major__label">Featured</span>
+                <h4 class="project-major__title">ExamEase</h4>
+                <p class="project-major__subtitle">Online examination system</p>
+                <p class="project-major__text">Secure exam system with role-based authentication for admins and students.</p>
+                <div class="project-major__stack">
+                  <span class="project-major__stack-head">
+                    <svg class="project-major__stack-ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
+                    Tech stack
+                  </span>
+                  <ul class="project-major__tags">
+                    <li>HTML</li><li>CSS</li><li>JavaScript</li><li>MySQL</li>
+                  </ul>
+                </div>
+                <div class="project-major__actions">
+                  <a class="project-btn project-btn--primary" href="https://github.com/Varun-Vijay-Gupta/ExamEase" target="_blank" rel="noopener noreferrer">
+                    <svg class="project-btn__gh" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    View Code
+                  </a>
+                  <a class="project-btn project-btn--secondary" href="https://exam-ease-amber.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-major reveal">
+              <div class="project-major__visual project-major__visual--db" role="img" aria-label="Database management system">
+                <span class="project-major__abbr" aria-hidden="true">DB</span>
+              </div>
+              <div class="project-major__body">
+                <span class="project-major__label">Internship</span>
+                <h4 class="project-major__title">Database management system</h4>
+                <p class="project-major__subtitle">Pragma Infotech · internship build</p>
+                <p class="project-major__text">CRUD-based web application using PHP and MySQL, built during the internship.</p>
+                <div class="project-major__stack">
+                  <span class="project-major__stack-head">
+                    <svg class="project-major__stack-ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
+                    Tech stack
+                  </span>
+                  <ul class="project-major__tags">
+                    <li>PHP</li><li>MySQL</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="projects-tier">
+          <div class="projects-tier__head projects-tier__head--secondary reveal">
+            <span class="projects-tier__icon projects-tier__icon--secondary" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+            </span>
+            <h3 class="projects-tier__title">Basic projects</h3>
+            <p class="projects-tier__desc">Focused exercises and smaller builds—many sources live in foldered modules inside the <strong>Project</strong> repository.</p>
+          </div>
+          <div class="projects-basic">
+            <article class="project-basic reveal">
+              <h4 class="project-basic__title">Complaint management system</h4>
+              <p class="project-basic__line">Web app for logging and tracking complaints with a MySQL-backed data layer.</p>
+              <ul class="project-basic__tech"><li>PHP</li><li>MySQL</li></ul>
+              <a class="project-basic__btn" href="https://github.com/Varun-Vijay-Gupta/Complaint-management-system" target="_blank" rel="noopener noreferrer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                View Code
+              </a>
+            </article>
+            <article class="project-basic reveal">
+              <h4 class="project-basic__title">Hospital management system</h4>
+              <p class="project-basic__line">Patient and appointment workflows with PHP server logic and relational storage.</p>
+              <ul class="project-basic__tech"><li>PHP</li><li>MySQL</li></ul>
+              <a class="project-basic__btn" href="https://github.com/Varun-Vijay-Gupta/Hospital-Management-System" target="_blank" rel="noopener noreferrer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                View Code
+              </a>
+            </article>
+            <article class="project-basic reveal">
+              <h4 class="project-basic__title">Banking app</h4>
+              <p class="project-basic__line">Console-style banking flows and core OOP practice.</p>
+              <ul class="project-basic__tech"><li>Java</li></ul>
+              <a class="project-basic__btn" href="https://github.com/Varun-Vijay-Gupta/Project/tree/main/Banking%20app" target="_blank" rel="noopener noreferrer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                View Code
+              </a>
+            </article>
+            <article class="project-basic reveal">
+              <h4 class="project-basic__title">Documentation website</h4>
+              <p class="project-basic__line">Structured documentation layout and readable technical content.</p>
+              <ul class="project-basic__tech"><li>HTML</li><li>CSS</li></ul>
+              <a class="project-basic__btn" href="https://github.com/Varun-Vijay-Gupta/Project/tree/main/Documentation" target="_blank" rel="noopener noreferrer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                View Code
+              </a>
+            </article>
+            <article class="project-basic reveal">
+              <h4 class="project-basic__title">Movie app</h4>
+              <p class="project-basic__line">Browse-focused UI for exploring movie data.</p>
+              <ul class="project-basic__tech"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <a class="project-basic__btn" href="https://github.com/Varun-Vijay-Gupta/Project/tree/main/Movie%20app" target="_blank" rel="noopener noreferrer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                View Code
+              </a>
+            </article>
+            <article class="project-basic reveal">
+              <h4 class="project-basic__title">Shopping bill generator</h4>
+              <p class="project-basic__line">Utility for generating and summarizing shopping bills.</p>
+              <ul class="project-basic__tech"><li>Java</li></ul>
+              <a class="project-basic__btn" href="https://github.com/Varun-Vijay-Gupta/Project/tree/main/Shooping%20bill" target="_blank" rel="noopener noreferrer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                View Code
+              </a>
+            </article>
+            <article class="project-basic reveal">
+              <h4 class="project-basic__title">Object detection &amp; image recognition</h4>
+              <p class="project-basic__line">IoT-oriented experiment combining hardware cues with recognition logic.</p>
+              <ul class="project-basic__tech"><li>Python</li><li>IoT</li></ul>
+              <a class="project-basic__btn" href="https://github.com/Varun-Vijay-Gupta/Project/tree/main/iot%20hardware%20project" target="_blank" rel="noopener noreferrer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                View Code
+              </a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section internship" id="internship" aria-labelledby="internship-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__label">Experience</span>
+          <h2 id="internship-title" class="section__title">Internship</h2>
+        </header>
+        <div class="internship__timeline reveal">
+          <div class="internship__rail" aria-hidden="true"></div>
+          <article class="internship__card">
+            <div class="internship__marker"></div>
+            <div class="internship__body">
+              <div class="internship__meta">
+                <span class="internship__role">Web Development Intern</span>
+                <span class="internship__company">Pragma Infotech</span>
+                <time class="internship__dates" datetime="2025-06">June 2025 – November 2025</time>
+              </div>
+              <ul class="internship__list">
+                <li>Developed a PHP–MySQL web application end to end</li>
+                <li>Designed database schema for maintainable data models</li>
+                <li>Implemented CRUD operations with clear validation</li>
+                <li>Optimized queries for faster responses</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section achievements" id="achievements" aria-labelledby="achievements-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__label">Achievements</span>
+          <h2 id="achievements-title" class="section__title">Highlights</h2>
+        </header>
+        <ul class="badges reveal">
+          <li class="badge">Python Certification</li>
+          <li class="badge">Cyber Security Certification</li>
+          <li class="badge">Power BI Certification</li>
+          <li class="badge">Web Development Course</li>
+          <li class="badge">Java DSA Course</li>
+          <li class="badge">150+ DSA problems solved</li>
+          <li class="badge">99.6 percentile in NCAT</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section languages" id="languages" aria-labelledby="languages-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__label">Languages</span>
+          <h2 id="languages-title" class="section__title">Communication</h2>
+        </header>
+        <div class="languages__grid reveal">
+          <div class="lang-card">
+            <span class="lang-card__name">English</span>
+            <span class="lang-card__level">Fluent</span>
+          </div>
+          <div class="lang-card">
+            <span class="lang-card__name">Hindi</span>
+            <span class="lang-card__level">Fluent</span>
+          </div>
+          <div class="lang-card">
+            <span class="lang-card__name">Gujarati</span>
+            <span class="lang-card__level">Intermediate</span>
+          </div>
+          <div class="lang-card">
+            <span class="lang-card__name">German</span>
+            <span class="lang-card__level">Basic</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__label">Contact</span>
+          <h2 id="contact-title" class="section__title">Let’s connect</h2>
+        </header>
+        <div class="contact__grid">
+          <div class="contact__info reveal">
+            <p class="contact__intro">Open to internships, collaborations, and meaningful projects. Reach out anytime.</p>
+            <ul class="contact__links">
+              <li>
+                <a href="mailto:vg9584911@gmail.com">vg9584911@gmail.com</a>
+              </li>
+              <li>
+                <a href="tel:+918200391228">+91 8200391228</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/varun-gupta-9b4ab0261/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              </li>
+              <li>
+                <a href="https://github.com/Varun-Vijay-Gupta" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </li>
+            </ul>
+          </div>
+          <form
+            class="contact__form reveal reveal--delay"
+            id="contactForm"
+            action="https://formspree.io/f/xwvwgvqa"
+            method="POST"
+            novalidate
+          >
+            <input type="hidden" name="_subject" value="Portfolio contact — Varun Gupta" />
+            <label class="form-field">
+              <span class="form-field__label">Name</span>
+              <input
+                class="form-field__input"
+                type="text"
+                name="name"
+                autocomplete="name"
+                required
+                placeholder="Your name"
+              />
+            </label>
+            <label class="form-field">
+              <span class="form-field__label">Email</span>
+              <input
+                class="form-field__input"
+                type="email"
+                name="email"
+                autocomplete="email"
+                required
+                placeholder="Your email"
+              />
+            </label>
+            <label class="form-field">
+              <span class="form-field__label">Message</span>
+              <textarea
+                class="form-field__input form-field__input--area"
+                name="message"
+                rows="4"
+                required
+                placeholder="Your message"
+              ></textarea>
+            </label>
+            <button class="btn btn--primary btn--full" type="submit" id="contactSubmit">Send Message</button>
+            <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">© Varun Gupta</p>
+      <p class="footer__loc">Surat, Gujarat, India</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
