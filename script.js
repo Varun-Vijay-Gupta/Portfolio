@@ -167,4 +167,38 @@
         });
     });
   }
+
+  var otherProjectsCarousel = document.getElementById("otherProjectsCarousel");
+  var otherProjectsPrev = document.getElementById("otherProjectsPrev");
+  var otherProjectsNext = document.getElementById("otherProjectsNext");
+
+  if (otherProjectsCarousel && otherProjectsPrev && otherProjectsNext) {
+    function getCarouselScrollAmount() {
+      var track = otherProjectsCarousel.querySelector(".projects-carousel__track");
+      var card = track && track.querySelector(".project-basic");
+      if (!card) return otherProjectsCarousel.clientWidth;
+      var gap = parseFloat(getComputedStyle(track).gap) || 0;
+      var cardWidth = card.offsetWidth + gap;
+      var visible = Math.max(1, Math.round(otherProjectsCarousel.clientWidth / cardWidth));
+      return visible * cardWidth - gap;
+    }
+
+    function updateCarouselButtons() {
+      var maxScroll = otherProjectsCarousel.scrollWidth - otherProjectsCarousel.clientWidth;
+      otherProjectsPrev.disabled = otherProjectsCarousel.scrollLeft <= 2;
+      otherProjectsNext.disabled = otherProjectsCarousel.scrollLeft >= maxScroll - 2;
+    }
+
+    otherProjectsPrev.addEventListener("click", function () {
+      otherProjectsCarousel.scrollBy({ left: -getCarouselScrollAmount(), behavior: "smooth" });
+    });
+
+    otherProjectsNext.addEventListener("click", function () {
+      otherProjectsCarousel.scrollBy({ left: getCarouselScrollAmount(), behavior: "smooth" });
+    });
+
+    otherProjectsCarousel.addEventListener("scroll", updateCarouselButtons, { passive: true });
+    window.addEventListener("resize", updateCarouselButtons);
+    updateCarouselButtons();
+  }
 })();
