@@ -32,11 +32,14 @@
       </button>
       <ul class="nav__list" id="navMenu">
         <li><a href="#about">About</a></li>
+        <li><a href="#learning">Learning</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#other-projects">Other Projects</a></li>
         <li><a href="#ai-automation">AI Automation</a></li>
+        <li><a href="#journey">Journey</a></li>
         <li><a href="#internships">Internships</a></li>
+        <li><a href="#blogs">Blogs</a></li>
         <li><a href="#achievements">Achievements</a></li>
         <li><a href="#contact" class="nav__cta">Contact</a></li>
       </ul>
@@ -45,33 +48,50 @@
 
   <main>
     <section class="hero" id="hero" aria-labelledby="hero-title">
-      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__mesh"></div>
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+        <div class="hero__orb hero__orb--3"></div>
+      </div>
       <div class="hero__grid">
         <div class="hero__content reveal">
+          <div class="hero__open-badge">
+            <span class="hero__open-dot" aria-hidden="true"></span>
+            Open to Work – Full-Stack / Backend Roles
+          </div>
           <p class="hero__eyebrow">Hello, I’m Varun Gupta</p>
           <h1 id="hero-title" class="hero__title">Aspiring Software Developer <span class="hero__divider">|</span> Full Stack Enthusiast</h1>
           <p class="hero__tagline">
             I enjoy turning complex problems into clear, reliable software—building scalable apps and learning something new with every project.
           </p>
           <div class="hero__actions">
-            <a class="btn btn--primary" href="#projects">View Projects</a>
-            <!-- Save your résumé as resume.pdf in this folder (same as index.html) -->
+            <a class="btn btn--primary btn--glow" href="#projects">View Projects</a>
             <a class="btn btn--ghost" href="Varun Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
             <a class="btn btn--ghost" href="#contact">Contact Me</a>
           </div>
-        </div>
-        <div class="hero__aside reveal reveal--delay" aria-hidden="true">
-          <div class="hero__card">
-            <div class="hero__card-inner">
-              <span class="hero__stat-label">Location</span>
-              <span class="hero__stat-value">Surat, Gujarat</span>
-            </div>
-            <div class="hero__card-inner">
-              <span class="hero__stat-label">Focus</span>
-              <span class="hero__stat-value">Java &amp; Full Stack</span>
-            </div>
-            <div class="hero__accent"></div>
-          </div>
+          <ul class="hero__stats" aria-label="Key statistics">
+            <li class="hero-stat">
+              <span class="hero-stat__value hero-stat__value--static">Fresher</span>
+              <span class="hero-stat__label">Experience Level</span>
+            </li>
+            <li class="hero-stat">
+              <span class="hero-stat__value" data-count="15" data-suffix="+">0</span>
+              <span class="hero-stat__label">Major Projects Built</span>
+            </li>
+            <li class="hero-stat">
+              <span class="hero-stat__value" data-count="150" data-suffix="+">0</span>
+              <span class="hero-stat__label">DSA Problems Solved</span>
+            </li>
+            <li class="hero-stat">
+              <span class="hero-stat__value" data-count="8.4" data-decimals="1">0</span>
+              <span class="hero-stat__label">CGPA</span>
+            </li>
+            <li class="hero-stat">
+              <span class="hero-stat__value" data-count="99.6" data-decimals="1">0</span>
+              <span class="hero-stat__label">NCAT Percentile</span>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -117,6 +137,38 @@
             </figure>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="section learning" id="learning" aria-labelledby="learning-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__label">Growth</span>
+          <h2 id="learning-title" class="section__title">Currently learning</h2>
+          <p class="section__lead">Expanding backend depth, cloud deployment, and system design fundamentals.</p>
+        </header>
+        <ul class="learning__grid reveal">
+          <li class="learning-card">
+            <span class="learning-card__icon" aria-hidden="true">☕</span>
+            <h3 class="learning-card__title">Spring Boot</h3>
+            <p class="learning-card__text">Building production-grade REST APIs, dependency injection, and enterprise Java patterns.</p>
+          </li>
+          <li class="learning-card">
+            <span class="learning-card__icon" aria-hidden="true">🐳</span>
+            <h3 class="learning-card__title">Docker</h3>
+            <p class="learning-card__text">Containerizing full-stack apps and composing local dev environments with Docker Compose.</p>
+          </li>
+          <li class="learning-card">
+            <span class="learning-card__icon" aria-hidden="true">☁️</span>
+            <h3 class="learning-card__title">AWS</h3>
+            <p class="learning-card__text">Exploring cloud deployment, managed databases, and scalable hosting for side projects.</p>
+          </li>
+          <li class="learning-card">
+            <span class="learning-card__icon" aria-hidden="true">🏗️</span>
+            <h3 class="learning-card__title">System Design</h3>
+            <p class="learning-card__text">Studying scalability, caching, load balancing, and designing reliable distributed systems.</p>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -181,7 +233,7 @@
         <header class="section__head reveal">
           <span class="section__label">Projects</span>
           <h2 id="projects-title" class="section__title">Featured work</h2>
-          <p class="section__lead">End-to-end full-stack and AI-powered applications with authentication, data layers, and production deployments.</p>
+          <p class="section__lead">End-to-end full-stack and AI-powered applications—each with an expandable case study covering problem, solution, and key learnings.</p>
         </header>
 
         <div class="projects-tier">
@@ -218,6 +270,18 @@
                   </a>
                   <a class="project-btn project-btn--secondary" href="https://aurora-ai-health-companion.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
                 </div>
+                <details class="case-study">
+                  <summary class="case-study__toggle">View case study</summary>
+                  <div class="case-study__body">
+                    <div class="case-study__grid">
+                      <div class="case-study__block"><h5 class="case-study__heading">Problem</h5><p>Users need accessible health guidance without navigating fragmented information or generic search results.</p></div>
+                      <div class="case-study__block"><h5 class="case-study__heading">Solution</h5><p>Built an AI health companion with a React frontend and Express API, combining structured health flows with intelligent assistance.</p></div>
+                      <div class="case-study__block"><h5 class="case-study__heading">Features</h5><ul><li>Symptom guidance &amp; health interactions</li><li>JWT authentication &amp; user profiles</li><li>PostgreSQL data layer with Prisma</li><li>Responsive Vite + React UI</li></ul></div>
+                      <div class="case-study__block"><h5 class="case-study__heading">Tech stack</h5><ul><li>React, Vite, Express.js, PostgreSQL, Prisma, AI Integrations</li></ul></div>
+                      <div class="case-study__block case-study__block--full"><h5 class="case-study__heading">Key learnings</h5><p>Learned to separate frontend and backend concerns, manage environment variables across deployments, and design API-first features for an MVP health product.</p></div>
+                    </div>
+                  </div>
+                </details>
               </div>
             </article>
 
@@ -246,6 +310,18 @@
                   </a>
                   <a class="project-btn project-btn--secondary" href="https://ai-powered-creators-analytics-platf.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
                 </div>
+                <details class="case-study">
+                  <summary class="case-study__toggle">View case study</summary>
+                  <div class="case-study__body">
+                    <div class="case-study__grid">
+                      <div class="case-study__block"><h5 class="case-study__heading">Problem</h5><p>Creators see metrics for YouTube and Instagram but struggle to understand <em>why</em> one video outperforms another—raw analytics lack transcript and content context.</p></div>
+                      <div class="case-study__block"><h5 class="case-study__heading">Solution</h5><p>Built a RAG-based analytics platform that compares two videos, stores transcript embeddings in Qdrant, and answers performance questions via a LangGraph workflow with Gemini.</p></div>
+                      <div class="case-study__block"><h5 class="case-study__heading">Features</h5><ul><li>YouTube + Instagram Reel comparison</li><li>Metadata &amp; transcript extraction</li><li>Vector search with source citations</li><li>Streaming chat with conversation memory</li><li>Engagement rate calculation</li></ul></div>
+                      <div class="case-study__block"><h5 class="case-study__heading">Tech stack</h5><ul><li>React, TypeScript, Vite, Express, PostgreSQL</li><li>LangGraph, Gemini, OpenAI Embeddings, Qdrant</li><li>Docker, yt-dlp, FFmpeg</li></ul></div>
+                      <div class="case-study__block case-study__block--full"><h5 class="case-study__heading">Key learnings</h5><p>Deployment taught me to manage environment variables across Vercel and Render, plan APIs before UI polish, design PostgreSQL schemas for chat history, and handle production rate limits when extracting YouTube data on shared cloud infrastructure.</p></div>
+                    </div>
+                  </div>
+                </details>
               </div>
             </article>
 
@@ -274,6 +350,18 @@
                   </a>
                   <a class="project-btn project-btn--secondary" href="https://exam-ease-amber.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
                 </div>
+                <details class="case-study">
+                  <summary class="case-study__toggle">View case study</summary>
+                  <div class="case-study__body">
+                    <div class="case-study__grid">
+                      <div class="case-study__block"><h5 class="case-study__heading">Problem</h5><p>Colleges and training institutes need a secure, digital way to conduct exams without paper overhead, manual grading bottlenecks, or weak access control.</p></div>
+                      <div class="case-study__block"><h5 class="case-study__heading">Solution</h5><p>Developed ExamEase—a full-stack online examination system with separate admin and student portals, secure authentication, and structured exam workflows.</p></div>
+                      <div class="case-study__block"><h5 class="case-study__heading">Features</h5><ul><li>Role-based authentication (admin &amp; student)</li><li>Exam creation and scheduling</li><li>Real-time progress tracking</li><li>Admin dashboard for oversight</li><li>Password reset &amp; OTP flows</li></ul></div>
+                      <div class="case-study__block"><h5 class="case-study__heading">Tech stack</h5><ul><li>Java, Spring Boot, MongoDB</li><li>HTML, CSS, JavaScript</li><li>REST APIs, Vercel deployment</li></ul></div>
+                      <div class="case-study__block case-study__block--full"><h5 class="case-study__heading">Key learnings</h5><p>Strengthened backend design with Spring Boot, modeled exam data in MongoDB, and learned to ship an MVP by prioritizing auth and core exam flows before secondary features.</p></div>
+                    </div>
+                  </div>
+                </details>
               </div>
             </article>
 
@@ -302,6 +390,18 @@
                   </a>
                   <a class="project-btn project-btn--secondary" href="https://code-spark-sandy.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
                 </div>
+                <details class="case-study">
+                  <summary class="case-study__toggle">View case study</summary>
+                  <div class="case-study__body">
+                    <div class="case-study__grid">
+                      <div class="case-study__block"><h5 class="case-study__heading">Problem</h5><p>Beginners need structured coding practice with progress tracking—not scattered tutorials without accountability.</p></div>
+                      <div class="case-study__block"><h5 class="case-study__heading">Solution</h5><p>CodeSpark delivers leveled coding lessons with authentication, dashboards, and API-backed progress persistence.</p></div>
+                      <div class="case-study__block"><h5 class="case-study__heading">Features</h5><ul><li>Beginner to advanced lesson tracks</li><li>User authentication &amp; dashboards</li><li>Progress tracking</li><li>REST API integration</li></ul></div>
+                      <div class="case-study__block"><h5 class="case-study__heading">Tech stack</h5><ul><li>Java, Spring Boot, MongoDB, HTML, CSS, JavaScript</li></ul></div>
+                      <div class="case-study__block case-study__block--full"><h5 class="case-study__heading">Key learnings</h5><p>Practiced designing user-centric learning flows, structuring MongoDB collections for progress data, and testing REST endpoints with Postman before frontend integration.</p></div>
+                    </div>
+                  </div>
+                </details>
               </div>
             </article>
           </div>
@@ -337,6 +437,18 @@
                 View Code
               </a>
             </div>
+            <details class="case-study case-study--compact">
+              <summary class="case-study__toggle">View case study</summary>
+              <div class="case-study__body">
+                <div class="case-study__grid case-study__grid--compact">
+                  <div class="case-study__block"><h5 class="case-study__heading">Problem</h5><p>Personal finance tracking often lacks a unified view of expenses, budgets, and transactions in one accessible platform.</p></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Solution</h5><p>Built a digital wallet and payment system with Node.js for expense tracking, budgeting tools, and transaction monitoring.</p></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Features</h5><ul><li>Expense and transaction logging</li><li>Budget planning views</li><li>Payment flow simulation</li><li>Financial summary dashboards</li></ul></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Tech stack</h5><ul><li>JavaScript, Node.js, REST APIs</li></ul></div>
+                  <div class="case-study__block case-study__block--full"><h5 class="case-study__heading">Key learnings</h5><p>Strengthened backend routing, data modeling for transactions, and designing user flows around money management edge cases.</p></div>
+                </div>
+              </div>
+            </details>
           </article>
           <article class="project-basic">
             <h4 class="project-basic__title">GitFlow Project</h4>
@@ -349,6 +461,18 @@
               </a>
               <a class="project-basic__btn project-basic__btn--demo" href="https://git-flow-kappa.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
             </div>
+            <details class="case-study case-study--compact">
+              <summary class="case-study__toggle">View case study</summary>
+              <div class="case-study__body">
+                <div class="case-study__grid case-study__grid--compact">
+                  <div class="case-study__block"><h5 class="case-study__heading">Problem</h5><p>Teams struggle with inconsistent branching, messy merges, and unclear PR workflows when collaborating on code.</p></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Solution</h5><p>Created a React + TypeScript demo app documenting GitFlow practices—feature branches, PRs, releases, and hotfixes—with a live deployed reference.</p></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Features</h5><ul><li>Branching strategy walkthrough</li><li>Pull request workflow examples</li><li>Version control best practices</li><li>Live demo on Vercel</li></ul></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Tech stack</h5><ul><li>TypeScript, React, Git, Vercel</li></ul></div>
+                  <div class="case-study__block case-study__block--full"><h5 class="case-study__heading">Key learnings</h5><p>Learned to structure repos for team collaboration and communicate workflow decisions clearly—skills directly applied during my Pragma Infotech internship.</p></div>
+                </div>
+              </div>
+            </details>
           </article>
           <article class="project-basic">
             <h4 class="project-basic__title">AI Ticketing System</h4>
@@ -360,6 +484,18 @@
                 View Code
               </a>
             </div>
+            <details class="case-study case-study--compact">
+              <summary class="case-study__toggle">View case study</summary>
+              <div class="case-study__body">
+                <div class="case-study__grid case-study__grid--compact">
+                  <div class="case-study__block"><h5 class="case-study__heading">Problem</h5><p>Support teams spend excessive time triaging tickets and drafting repetitive responses manually.</p></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Solution</h5><p>Built an AI-powered ticketing system that categorizes incoming requests and assists with automated response suggestions.</p></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Features</h5><ul><li>Ticket creation and status tracking</li><li>AI-based categorization</li><li>Automated response assistance</li><li>Node.js REST backend</li></ul></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Tech stack</h5><ul><li>JavaScript, Node.js, AI integrations</li></ul></div>
+                  <div class="case-study__block case-study__block--full"><h5 class="case-study__heading">Key learnings</h5><p>Gained experience integrating LLM APIs into practical workflows and designing prompts that balance automation with human review.</p></div>
+                </div>
+              </div>
+            </details>
           </article>
           <article class="project-basic">
             <h4 class="project-basic__title">GST Calculator</h4>
@@ -372,6 +508,18 @@
               </a>
               <a class="project-basic__btn project-basic__btn--demo" href="https://gst-calculator-azure-delta.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
             </div>
+            <details class="case-study case-study--compact">
+              <summary class="case-study__toggle">View case study</summary>
+              <div class="case-study__body">
+                <div class="case-study__grid case-study__grid--compact">
+                  <div class="case-study__block"><h5 class="case-study__heading">Problem</h5><p>Quick GST calculations for invoices and bills are error-prone when done manually or with clunky tools.</p></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Solution</h5><p>Developed a clean Next.js utility that computes tax amounts, net totals, and GST breakdowns with instant feedback.</p></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Features</h5><ul><li>CGST/SGST/IGST calculations</li><li>Real-time total updates</li><li>Responsive UI</li><li>Deployed live demo</li></ul></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Tech stack</h5><ul><li>React, Next.js, TypeScript, Vercel</li></ul></div>
+                  <div class="case-study__block case-study__block--full"><h5 class="case-study__heading">Key learnings</h5><p>Practiced component-driven UI design, TypeScript for type-safe calculations, and shipping a polished micro-app to production.</p></div>
+                </div>
+              </div>
+            </details>
           </article>
           <article class="project-basic">
             <h4 class="project-basic__title">NayePankh Foundation Website</h4>
@@ -384,6 +532,18 @@
               </a>
               <a class="project-basic__btn project-basic__btn--demo" href="https://webpage-naye-pankh-foundation.onrender.com/" target="_blank" rel="noopener noreferrer">Live Demo</a>
             </div>
+            <details class="case-study case-study--compact">
+              <summary class="case-study__toggle">View case study</summary>
+              <div class="case-study__body">
+                <div class="case-study__grid case-study__grid--compact">
+                  <div class="case-study__block"><h5 class="case-study__heading">Problem</h5><p>NGOs need an online presence to share initiatives, stories, and volunteer opportunities without complex CMS overhead.</p></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Solution</h5><p>Designed and built a responsive website for NayePankh Foundation showcasing programs, updates, and ways to get involved.</p></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Features</h5><ul><li>Initiative and story sections</li><li>Volunteering call-to-actions</li><li>Mobile-friendly layout</li><li>Live deployment on Render</li></ul></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Tech stack</h5><ul><li>HTML, CSS, JavaScript, Render</li></ul></div>
+                  <div class="case-study__block case-study__block--full"><h5 class="case-study__heading">Key learnings</h5><p>Learned to translate real-world NGO requirements into accessible web content and deploy static sites for community impact.</p></div>
+                </div>
+              </div>
+            </details>
           </article>
           <article class="project-basic">
             <h4 class="project-basic__title">She Can Foundation Website</h4>
@@ -396,6 +556,18 @@
               </a>
               <a class="project-basic__btn project-basic__btn--demo" href="https://web-page-she-can-foundation.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
             </div>
+            <details class="case-study case-study--compact">
+              <summary class="case-study__toggle">View case study</summary>
+              <div class="case-study__body">
+                <div class="case-study__grid case-study__grid--compact">
+                  <div class="case-study__block"><h5 class="case-study__heading">Problem</h5><p>Women empowerment organizations need digital visibility to reach supporters and amplify their mission.</p></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Solution</h5><p>Built a modern foundation website highlighting She Can&apos;s initiatives with clear navigation and outreach-focused content.</p></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Features</h5><ul><li>Mission and program pages</li><li>Visual storytelling layout</li><li>Contact and engagement sections</li><li>Live Vercel deployment</li></ul></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Tech stack</h5><ul><li>HTML, CSS, JavaScript, Vercel</li></ul></div>
+                  <div class="case-study__block case-study__block--full"><h5 class="case-study__heading">Key learnings</h5><p>Applied design principles for nonprofit branding and learned to iterate based on stakeholder feedback for social impact projects.</p></div>
+                </div>
+              </div>
+            </details>
           </article>
           <article class="project-basic">
             <h4 class="project-basic__title">Complaint management system</h4>
@@ -407,6 +579,18 @@
                 View Code
               </a>
             </div>
+            <details class="case-study case-study--compact">
+              <summary class="case-study__toggle">View case study</summary>
+              <div class="case-study__body">
+                <div class="case-study__grid case-study__grid--compact">
+                  <div class="case-study__block"><h5 class="case-study__heading">Problem</h5><p>Organizations need a structured way to log, track, and resolve complaints without losing accountability.</p></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Solution</h5><p>Developed a PHP + MySQL web app for submitting complaints, updating status, and maintaining a searchable record.</p></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Features</h5><ul><li>Complaint submission forms</li><li>Status tracking workflow</li><li>MySQL-backed persistence</li><li>Admin review views</li></ul></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Tech stack</h5><ul><li>PHP, MySQL, HTML/CSS</li></ul></div>
+                  <div class="case-study__block case-study__block--full"><h5 class="case-study__heading">Key learnings</h5><p>Built foundational CRUD skills, SQL schema design, and server-side form validation—core patterns reused in my internship DBMS work.</p></div>
+                </div>
+              </div>
+            </details>
           </article>
           <article class="project-basic">
             <h4 class="project-basic__title">Hospital management system</h4>
@@ -418,6 +602,18 @@
                 View Code
               </a>
             </div>
+            <details class="case-study case-study--compact">
+              <summary class="case-study__toggle">View case study</summary>
+              <div class="case-study__body">
+                <div class="case-study__grid case-study__grid--compact">
+                  <div class="case-study__block"><h5 class="case-study__heading">Problem</h5><p>Hospitals require coordinated patient records and appointment scheduling without paper-based inefficiencies.</p></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Solution</h5><p>Built a hospital management system with patient registration, appointment booking, and relational data storage in MySQL.</p></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Features</h5><ul><li>Patient record management</li><li>Appointment scheduling</li><li>Doctor and department views</li><li>PHP server-side logic</li></ul></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Tech stack</h5><ul><li>PHP, MySQL, HTML/CSS</li></ul></div>
+                  <div class="case-study__block case-study__block--full"><h5 class="case-study__heading">Key learnings</h5><p>Modeled entity relationships for healthcare workflows and practiced building multi-page PHP applications with session handling.</p></div>
+                </div>
+              </div>
+            </details>
           </article>
           <article class="project-basic">
             <h4 class="project-basic__title">Banking app</h4>
@@ -429,6 +625,18 @@
                 View Code
               </a>
             </div>
+            <details class="case-study case-study--compact">
+              <summary class="case-study__toggle">View case study</summary>
+              <div class="case-study__body">
+                <div class="case-study__grid case-study__grid--compact">
+                  <div class="case-study__block"><h5 class="case-study__heading">Problem</h5><p>Understanding OOP and core banking operations requires hands-on practice beyond textbook examples.</p></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Solution</h5><p>Implemented a console-based banking application in Java with account creation, deposits, withdrawals, and balance inquiries.</p></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Features</h5><ul><li>Account management</li><li>Deposit and withdrawal flows</li><li>Balance inquiry</li><li>OOP class structure</li></ul></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Tech stack</h5><ul><li>Java, OOP, Console I/O</li></ul></div>
+                  <div class="case-study__block case-study__block--full"><h5 class="case-study__heading">Key learnings</h5><p>Solidified encapsulation, inheritance, and clean class design—foundational Java skills that support my Spring Boot learning path.</p></div>
+                </div>
+              </div>
+            </details>
           </article>
           <article class="project-basic">
             <h4 class="project-basic__title">Documentation website</h4>
@@ -440,6 +648,18 @@
                 View Code
               </a>
             </div>
+            <details class="case-study case-study--compact">
+              <summary class="case-study__toggle">View case study</summary>
+              <div class="case-study__body">
+                <div class="case-study__grid case-study__grid--compact">
+                  <div class="case-study__block"><h5 class="case-study__heading">Problem</h5><p>Technical content is hard to consume without clear structure, navigation, and readable typography.</p></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Solution</h5><p>Created a documentation-style website with organized sections, sidebar navigation, and clean content hierarchy.</p></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Features</h5><ul><li>Structured doc layout</li><li>Readable typography</li><li>Section-based navigation</li><li>Responsive content blocks</li></ul></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Tech stack</h5><ul><li>HTML, CSS</li></ul></div>
+                  <div class="case-study__block case-study__block--full"><h5 class="case-study__heading">Key learnings</h5><p>Practiced information architecture and writing developer-friendly documentation—skills I apply when READMEs and API docs matter.</p></div>
+                </div>
+              </div>
+            </details>
           </article>
           <article class="project-basic">
             <h4 class="project-basic__title">Movie app</h4>
@@ -451,6 +671,18 @@
                 View Code
               </a>
             </div>
+            <details class="case-study case-study--compact">
+              <summary class="case-study__toggle">View case study</summary>
+              <div class="case-study__body">
+                <div class="case-study__grid case-study__grid--compact">
+                  <div class="case-study__block"><h5 class="case-study__heading">Problem</h5><p>Browsing movie catalogs needs an intuitive UI that surfaces titles, details, and categories at a glance.</p></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Solution</h5><p>Built a browse-focused movie app with card layouts, filtering, and responsive front-end interactions.</p></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Features</h5><ul><li>Movie listing and detail views</li><li>Search and browse UI</li><li>Responsive grid layout</li><li>Client-side interactivity</li></ul></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Tech stack</h5><ul><li>HTML, CSS, JavaScript</li></ul></div>
+                  <div class="case-study__block case-study__block--full"><h5 class="case-study__heading">Key learnings</h5><p>Early front-end practice with DOM manipulation, layout design, and building engaging browse experiences.</p></div>
+                </div>
+              </div>
+            </details>
           </article>
           <article class="project-basic">
             <h4 class="project-basic__title">Shopping bill generator</h4>
@@ -462,6 +694,18 @@
                 View Code
               </a>
             </div>
+            <details class="case-study case-study--compact">
+              <summary class="case-study__toggle">View case study</summary>
+              <div class="case-study__body">
+                <div class="case-study__grid case-study__grid--compact">
+                  <div class="case-study__block"><h5 class="case-study__heading">Problem</h5><p>Retail counters need quick bill generation with itemized totals and tax summaries.</p></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Solution</h5><p>Created a Java utility that accepts item entries and produces formatted shopping bills with totals.</p></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Features</h5><ul><li>Item and quantity input</li><li>Automatic total calculation</li><li>Formatted bill output</li><li>Console-based workflow</li></ul></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Tech stack</h5><ul><li>Java, Collections, Console I/O</li></ul></div>
+                  <div class="case-study__block case-study__block--full"><h5 class="case-study__heading">Key learnings</h5><p>Reinforced loops, collections, and arithmetic logic in Java—building blocks for backend service development.</p></div>
+                </div>
+              </div>
+            </details>
           </article>
           <article class="project-basic">
             <h4 class="project-basic__title">Object detection &amp; image recognition</h4>
@@ -473,6 +717,18 @@
                 View Code
               </a>
             </div>
+            <details class="case-study case-study--compact">
+              <summary class="case-study__toggle">View case study</summary>
+              <div class="case-study__body">
+                <div class="case-study__grid case-study__grid--compact">
+                  <div class="case-study__block"><h5 class="case-study__heading">Problem</h5><p>IoT and vision systems need software that interprets sensor or camera input for real-world object recognition.</p></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Solution</h5><p>Experimented with an IoT hardware project combining Python recognition logic with hardware cues for object detection.</p></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Features</h5><ul><li>Image recognition pipeline</li><li>Hardware integration experiments</li><li>Python-based detection logic</li><li>IoT prototype workflow</li></ul></div>
+                  <div class="case-study__block"><h5 class="case-study__heading">Tech stack</h5><ul><li>Python, IoT hardware, Computer Vision basics</li></ul></div>
+                  <div class="case-study__block case-study__block--full"><h5 class="case-study__heading">Key learnings</h5><p>Explored the intersection of embedded systems and ML—broadening my perspective beyond pure web development into intelligent systems.</p></div>
+                </div>
+              </div>
+            </details>
           </article>
             </div>
           </div>
@@ -493,7 +749,7 @@
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1-6 6M8 11a6 6 0 0 1 6-6M12 16v5M9 19h6"/><circle cx="12" cy="8" r="2"/></svg>
             </div>
             <div class="automation-card__body">
-              <h3 class="automation-card__title">LinkedIn Automation</h3>
+              <h3 class="automation-card__title">LinkedIn AutoPost</h3>
               <p class="automation-card__text">Automated LinkedIn engagement workflow for sending connection requests, follow-ups, and nurturing leads.</p>
               <div class="automation-card__stack">
                 <span class="automation-card__stack-label">Tech stack</span>
@@ -501,6 +757,18 @@
                   <li>Python</li><li>LLMs</li><li>Automation APIs</li>
                 </ul>
               </div>
+              <details class="case-study case-study--automation">
+                <summary class="case-study__toggle">View case study</summary>
+                <div class="case-study__body">
+                  <div class="case-study__grid">
+                    <div class="case-study__block"><h5 class="case-study__heading">Problem</h5><p>Manual LinkedIn outreach is repetitive and hard to personalize at scale during internship and job search cycles.</p></div>
+                    <div class="case-study__block"><h5 class="case-study__heading">Solution</h5><p>Built LinkedIn AutoPost—a Python automation pipeline using LLMs to draft context-aware connection messages, follow-ups, and engagement sequences.</p></div>
+                    <div class="case-study__block"><h5 class="case-study__heading">Features</h5><ul><li>Automated connection request workflows</li><li>LLM-generated personalized outreach</li><li>Follow-up scheduling &amp; lead nurturing</li><li>API-driven automation steps</li></ul></div>
+                    <div class="case-study__block"><h5 class="case-study__heading">Tech stack</h5><ul><li>Python, LLMs, Automation APIs, Prompt Engineering</li></ul></div>
+                    <div class="case-study__block case-study__block--full"><h5 class="case-study__heading">Key learnings</h5><p>Improved prompt engineering for professional tone, designed reusable automation workflows, and learned to balance efficiency with platform-appropriate outreach limits.</p></div>
+                  </div>
+                </div>
+              </details>
             </div>
           </article>
           <article class="automation-card reveal">
@@ -516,9 +784,74 @@
                   <li>Python</li><li>LLMs</li><li>SMTP APIs</li>
                 </ul>
               </div>
+              <details class="case-study case-study--automation">
+                <summary class="case-study__toggle">View case study</summary>
+                <div class="case-study__body">
+                  <div class="case-study__grid">
+                    <div class="case-study__block"><h5 class="case-study__heading">Problem</h5><p>Writing and sending personalized outreach emails at scale is time-consuming and inconsistent without automation.</p></div>
+                    <div class="case-study__block"><h5 class="case-study__heading">Solution</h5><p>Built an AI-powered email workflow that generates tailored campaign copy with LLMs and dispatches messages through SMTP APIs.</p></div>
+                    <div class="case-study__block"><h5 class="case-study__heading">Features</h5><ul><li>LLM-generated personalized email content</li><li>Campaign template workflows</li><li>SMTP API integration for delivery</li><li>Batch outreach automation</li></ul></div>
+                    <div class="case-study__block"><h5 class="case-study__heading">Tech stack</h5><ul><li>Python, LLMs, SMTP APIs, Prompt Engineering</li></ul></div>
+                    <div class="case-study__block case-study__block--full"><h5 class="case-study__heading">Key learnings</h5><p>Learned to structure prompt templates for consistent tone, handle SMTP configuration securely, and design automation pipelines similar to those used in LinkedIn AutoPost and creator analytics outreach experiments.</p></div>
+                  </div>
+                </div>
+              </details>
             </div>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section class="section journey" id="journey" aria-labelledby="journey-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__label">Timeline</span>
+          <h2 id="journey-title" class="section__title">My journey</h2>
+          <p class="section__lead">From coursework and internships to full-stack and AI projects—working toward a software engineering role.</p>
+        </header>
+        <div class="journey__timeline reveal">
+          <div class="journey__rail" aria-hidden="true"></div>
+            <article class="journey-item">
+              <div class="journey-item__marker"></div>
+              <div class="journey-item__body">
+                <time class="journey-item__date" datetime="2024">2022</time>
+                <h3 class="journey-item__title">Started BTech in Computer Science</h3>
+                <p class="journey-item__text">Began building fundamentals in Java, DSA, and web development at P P Savani University.</p>
+              </div>
+            </article>
+            <article class="journey-item">
+              <div class="journey-item__marker"></div>
+              <div class="journey-item__body">
+                <time class="journey-item__date" datetime="2025">2023 – 2024</time>
+                <h3 class="journey-item__title">Basic java and full-stack Projects</h3>
+                <p class="journey-item__text">Built basic java and full-stack projects like shopping bill generator, AI ticketing system, etc.</p>
+              </div>
+            </article>
+            <article class="journey-item">
+              <div class="journey-item__marker"></div>
+              <div class="journey-item__body">
+                <time class="journey-item__date" datetime="2025-06">June 2025</time>
+                <h3 class="journey-item__title">Internship at Pragma Infotech</h3>
+                <p class="journey-item__text">Web Development Intern—built a Database Management System with PHP, MySQL, and a collaborative team of 10–20 members.</p>
+              </div>
+            </article>
+            <article class="journey-item">
+              <div class="journey-item__marker"></div>
+              <div class="journey-item__body">
+                <time class="journey-item__date" datetime="2025">2025 – 2026</time>
+                <h3 class="journey-item__title">Major full-stack &amp; AI projects</h3>
+                <p class="journey-item__text">Shipped Aurora AI, Creators Analytics Platform, ExamEase, CodeSpark, and automation workflows with production deployments.</p>
+              </div>
+            </article>
+            <article class="journey-item">
+              <div class="journey-item__marker"></div>
+              <div class="journey-item__body">
+                <time class="journey-item__date" datetime="2026">2026</time>
+                <h3 class="journey-item__title">Graduation &amp; next goal</h3>
+                <p class="journey-item__text">Completing BTech CSE and targeting a <strong>Full-Stack or Backend Software Engineer</strong> position to build scalable products.</p>
+              </div>
+            </article>
+          </div>
       </div>
     </section>
 
@@ -563,7 +896,7 @@
             <span class="achievement-item__icon" aria-hidden="true">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
             </span>
-            Built and deployed 10+ full-stack and AI-powered projects.
+            Built and deployed 15+ full-stack and AI-powered projects.
           </li>
           <li class="achievement-item">
             <span class="achievement-item__icon" aria-hidden="true">
@@ -596,6 +929,50 @@
             Delivered production-ready applications using React, Express.js, PostgreSQL, and AI integrations.
           </li>
         </ul>
+      </div>
+    </section>
+
+    <section class="section blogs" id="blogs" aria-labelledby="blogs-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__label">Writing</span>
+          <h2 id="blogs-title" class="section__title">Blogs &amp; learnings</h2>
+          <p class="section__lead">Practical notes from building, deploying, and shipping full-stack and AI-powered projects.</p>
+        </header>
+        <div class="blogs__wrapper reveal" id="blogsWrapper">
+          <div class="blogs__grid" id="blogsGrid">
+          <article class="blog-card" data-blog="0">
+            <ul class="blog-card__tags"><li>Deployment</li><li>DevOps</li><li>MVP</li></ul>
+            <h3 class="blog-card__title">What I Learned While Deploying Full-Stack Projects</h3>
+            <p class="blog-card__excerpt">Deploying React frontends on Vercel and Express backends on Render taught me that production is a different skill from local development.</p>
+            <div class="blog-card__full">
+              <p>Environment variables were the biggest lesson—API keys, database URLs, and CORS origins must be configured separately for each platform. I learned to use <code>.env.example</code> files, never commit secrets, and validate configs at server startup.</p>
+              <p>Deployment challenges included cold starts on free tiers, CORS mismatches between frontend and backend URLs, and build failures when TypeScript paths weren't aligned. Starting with an MVP—auth, one core feature, then polish—helped me ship faster and debug less.</p>
+            </div>
+            <button class="blog-card__read" type="button" aria-expanded="false">Read article</button>
+          </article>
+          <article class="blog-card" data-blog="1">
+            <ul class="blog-card__tags"><li>Planning</li><li>API Design</li><li>Database</li></ul>
+            <h3 class="blog-card__title">How I Approach Building Major Projects</h3>
+            <p class="blog-card__excerpt">A repeatable approach: define the problem, sketch data models, plan APIs, build an MVP, then iterate with real user flows.</p>
+            <div class="blog-card__full">
+              <p>I start by writing the problem statement in one paragraph, then list 3–5 must-have features for an MVP. Database design comes next—identifying entities, relationships, and indexes before writing UI code.</p>
+              <p>API planning means defining REST endpoints with request/response shapes early. For ExamEase, separating admin and student routes clarified auth middleware. For analytics platforms, I plan ingestion pipelines before chat UI. This structure reduces rework and keeps scope manageable.</p>
+            </div>
+            <button class="blog-card__read" type="button" aria-expanded="false">Read article</button>
+          </article>
+          <article class="blog-card" data-blog="2">
+            <ul class="blog-card__tags"><li>RAG</li><li>LangGraph</li><li>Vector DB</li></ul>
+            <h3 class="blog-card__title">Lessons from Building an AI Creator Analytics Platform</h3>
+            <p class="blog-card__excerpt">Building a RAG pipeline with LangGraph, Qdrant, and Gemini surfaced hard lessons in embeddings, prompt engineering, and cloud extraction limits.</p>
+            <div class="blog-card__full">
+              <p>The pipeline extracts YouTube and Instagram metadata, chunks transcripts, embeds them with OpenAI, and stores vectors in Qdrant. LangGraph orchestrates retrieval → context assembly → Gemini generation with streaming responses and source citations.</p>
+              <p>Key learnings: vector databases need metadata filters per video; prompt engineering must instruct the model to cite sources; Docker Compose simplifies local Qdrant + PostgreSQL setup. Production yt-dlp on shared hosts hits rate limits—design demos accordingly. Prompt engineering and chunk size tuning significantly affect answer quality.</p>
+            </div>
+            <button class="blog-card__read" type="button" aria-expanded="false">Read article</button>
+          </article>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -634,7 +1011,7 @@
         </header>
         <div class="contact__grid">
           <div class="contact__info reveal">
-            <p class="contact__intro">Open to internships, collaborations, and meaningful projects. Reach out anytime.</p>
+            <p class="contact__intro">Open to Full-Stack and Backend Software Engineer roles, internships, and meaningful collaborations. Reach out anytime.</p>
             <ul class="contact__links">
               <li>
                 <a href="mailto:vg9584911@gmail.com">vg9584911@gmail.com</a>
@@ -690,7 +1067,7 @@
                 placeholder="Your message"
               ></textarea>
             </label>
-            <button class="btn btn--primary btn--full" type="submit" id="contactSubmit">Send Message</button>
+            <button class="btn btn--primary btn--glow btn--full" type="submit" id="contactSubmit">Send Message</button>
             <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
           </form>
         </div>
